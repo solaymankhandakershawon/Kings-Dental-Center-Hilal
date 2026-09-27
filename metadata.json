@@ -1,0 +1,6 @@
+{
+  "name": "Kings Dental Center Hilal - Showcase & Booking",
+  "description": "Interactive showcase demo for Kings Dental Center Hilal, Doha featuring live clinic hours, verified Google reviews, interactive location map, and instant appointment booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
