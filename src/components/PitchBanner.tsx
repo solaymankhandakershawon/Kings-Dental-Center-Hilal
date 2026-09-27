@@ -31,7 +31,7 @@ export const PitchBanner: React.FC<PitchBannerProps> = ({
           <span className="text-slate-300 font-medium">
             {CLINIC_INFO.name} ({CLINIC_INFO.crNumber})
           </span>
-          <span className="text-slate-500 hidden md:inline">· 4.8★ (384+ Reviews)</span>
+          <span className="text-slate-500 hidden md:inline">· 4.8★ (1,400+ Reviews)</span>
           <a
             href={CLINIC_INFO.googleMapsUrl}
             target="_blank"

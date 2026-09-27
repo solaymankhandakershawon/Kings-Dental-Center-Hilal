@@ -75,7 +75,7 @@ export const ClientPitchModal: React.FC<ClientPitchModalProps> = ({
                 <span className="text-slate-500 block">{lang === 'en' ? 'Google Rating:' : 'تقييم جوجل:'}</span>
                 <span className="font-bold text-slate-900 flex items-center gap-1">
                   <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                  <span>4.8 / 5.0 (384+ Verified Reviews)</span>
+                  <span>4.8 / 5.0 (1,400+ Verified Reviews)</span>
                 </span>
               </div>
               <div>

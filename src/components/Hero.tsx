@@ -86,7 +86,7 @@ export const Hero: React.FC<HeroProps> = ({
                 <div className="min-w-0">
                   <div className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
                     <span>4.8 / 5.0</span>
-                    <span className="text-[11px] font-normal text-slate-500">(384+ Google Reviews)</span>
+                    <span className="text-[11px] font-normal text-slate-500">(1,400+ Google Reviews)</span>
                   </div>
                   <div className="text-[11px] text-teal-600 font-medium group-hover:underline">
                     {lang === 'en' ? 'Verified Patient Feedback →' : 'آراء المرضى الموثقة ←'}
@@ -97,29 +97,29 @@ export const Hero: React.FC<HeroProps> = ({
 
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-3 pt-2">
-              <button
-                onClick={onBookClick}
-                className="px-6 py-3.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow transition-all inline-flex items-center gap-2 cursor-pointer"
-              >
-                <Calendar className="w-4 h-4" />
-                <span>{t.hero.ctaBook}</span>
-              </button>
-
-              <a
-                href="#location"
-                className="px-5 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm sm:text-base border border-slate-200 shadow-2xs transition-colors inline-flex items-center gap-2"
-              >
-                <Navigation className="w-4 h-4 text-teal-600" />
-                <span>{t.hero.ctaDirections}</span>
-              </a>
-
               <a
                 href={`https://wa.me/${CLINIC_INFO.whatsapp}?text=${encodeURIComponent('Hello Kings Dental Center Hilal, I would like to book a dental consultation.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-3.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold text-sm sm:text-base border border-emerald-200 transition-colors inline-flex items-center gap-2"
+                className="px-6 py-3.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-semibold text-sm sm:text-base shadow-sm hover:shadow transition-all inline-flex items-center gap-2"
               >
-                <span>WhatsApp</span>
+                <Calendar className="w-4 h-4" />
+                <span>{t.hero.ctaWhatsapp}</span>
+              </a>
+
+              <a
+                href={`tel:${CLINIC_INFO.phonePrimary}`}
+                className="px-5 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-800 font-semibold text-sm sm:text-base border border-slate-200 shadow-2xs transition-colors inline-flex items-center gap-2"
+              >
+                <span>Call {CLINIC_INFO.phonePrimary}</span>
+              </a>
+
+              <a
+                href="#location"
+                className="px-4 py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm sm:text-base transition-colors inline-flex items-center gap-2"
+              >
+                <Navigation className="w-4 h-4 text-teal-600" />
+                <span>{t.hero.ctaDirections}</span>
               </a>
             </div>
 
@@ -149,7 +149,7 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200/80 bg-slate-900 group">
               <img
-                src="/src/assets/images/hero_kings_dental_clinic_1790537814778.jpg"
+                src="https://images.pexels.com/photos/3845766/pexels-photo-3845766.jpeg?auto=compress&cs=tinysrgb&w=1000"
                 alt="Kings Dental Center Hilal clinic interior in Doha"
                 className="w-full h-80 sm:h-96 lg:h-[440px] object-cover transition-transform duration-500 group-hover:scale-105"
                 referrerPolicy="no-referrer"
@@ -165,7 +165,7 @@ export const Hero: React.FC<HeroProps> = ({
                     </h3>
                     <p className="text-xs text-slate-600 mt-0.5 flex items-center gap-1">
                       <MapPin className="w-3 h-3 text-teal-600 shrink-0" />
-                      <span className="truncate">Ibn Al Tayyeb St, Zone 43, Nuaija, Doha</span>
+                      <span className="truncate">Opposite Al Meera, Ibn Al Tayyeb St, Doha</span>
                     </p>
                   </div>
                   <div className="text-right shrink-0">

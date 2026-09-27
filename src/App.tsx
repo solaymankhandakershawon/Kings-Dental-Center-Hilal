@@ -54,6 +54,22 @@ export default function App() {
   return (
     <div className={`min-h-screen flex flex-col bg-slate-50 text-slate-900 ${lang === 'ar' ? 'font-arabic' : 'font-sans'}`}>
       
+      {/* 24/7 Dental Emergency Alert Bar */}
+      <div className="bg-emerald-600 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium flex items-center justify-center gap-2 shadow-xs">
+        <span>🚨</span>
+        <span>
+          {lang === 'en'
+            ? '24/7 Dental Emergency Services Available in Hilal, Doha | '
+            : 'خدمة طوارئ الأسنان متاحة على مدار الساعة في الهلال، الدوحة | '}
+        </span>
+        <a
+          href={`tel:${CLINIC_INFO.phonePrimary}`}
+          className="underline hover:text-emerald-100 font-bold whitespace-nowrap"
+        >
+          {lang === 'en' ? `Call Now: ${CLINIC_INFO.phonePrimary}` : `اتصل الآن: ${CLINIC_INFO.phonePrimary}`}
+        </a>
+      </div>
+
       {/* 1. Client Presentation Mode / Audit Ribbon */}
       <PitchBanner
         lang={lang}
